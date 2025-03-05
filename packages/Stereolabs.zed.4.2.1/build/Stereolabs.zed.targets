@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<Project>
+        <ItemGroup Condition=" '$(OS)' == 'WINDOWS_NT'">
+                <Content Include="$(MSBuildThisFileDirectory)..\runtimes\win10-x64\native\*.dll">
+                        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+                        <Link>%(FileName)%(Extension)</Link>
+				</Content>
+        </ItemGroup>
+		<PropertyGroup>
+			<ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>None</ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>
+			<AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+		</PropertyGroup>
+</Project>
