@@ -2,7 +2,8 @@ This repository contains the source code for my graduation project: Improving Te
 
 Project Overview:
 The project focuses on improving a conveyor test setup to support automated metal classification. 
-This is part of a larger research collaboration between SMART Research Group and Riwald Recycling, aiming to develop automated solutions for sorting different types of metals using machine vision systems.
+This is part of a larger research collaboration between SMART Research Group and Riwald Recycling, aiming to develop automated solutions for sorting different types of metals using machine vision systems.  
+![image](https://github.com/user-attachments/assets/25157c17-ed8b-4bc4-9ec9-4634f96f9d82)  
 
 Key features of the project include:
 
