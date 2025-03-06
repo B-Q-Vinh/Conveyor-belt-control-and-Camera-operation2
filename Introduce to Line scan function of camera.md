@@ -28,12 +28,12 @@ Create 2D images by concatenating pixel columns.
 Automatically adjust image size based on speed.  
 
 E. How It Works
-1. Camera continuously captures frames
-2. Software monitors encoder signals to determine movement distance
-3. When distance exceeds pixel size, a column from the middle of the frame is extracted
-4. The column is appended to the line scan image
-5. When the maximum number of columns is reached (calculated based on speed), the image is refreshed
-6. Image is continuously displayed in an OpenCV window
+1. Camera continuously captures frames.
+2. Software monitors encoder signals to determine movement distance.
+3. When distance exceeds pixel size, a column from the middle of the frame is extracted.
+4. The column is appended to the line scan image.
+5. When the maximum number of columns is reached (calculated based on speed), the image is refreshed.
+6. Image is continuously displayed in an OpenCV window.  
 Example:
 When the 2D image is being composited by line scan images  
 ![image](https://github.com/user-attachments/assets/80e9c4ae-cdbc-47cc-bdb9-5ab6f52253ec)  
