@@ -1,7 +1,7 @@
 The introduction to the main functionality of the Arduino code, focusing on the Command part for the VFD and Interfacing with the User Interface (UI) , also briefly mentioning other functions.
 
 A. VFD Control via RS-485  
-RS-485 User’s manual (for Frenic mini): https://americas.fujielectric.com/files/RS-485_Users_Manual_24A7-E-0082.pdf
+RS-485 User’s manual (for Frenic mini): https://americas.fujielectric.com/files/RS-485_Users_Manual_24A7-E-0082.pdf  
 Arduino Mega acts as the master controller, sending control commands to VFD (Variable Frequency Drive) via RS-485 communication (using ModbusMaster library). The main commands include:
 
 1.Run Operation command: S06  
