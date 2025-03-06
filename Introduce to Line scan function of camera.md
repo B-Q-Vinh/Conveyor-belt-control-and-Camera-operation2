@@ -3,7 +3,7 @@ This application is developed to and display images from a ZED camera using the 
 2. Dynamically adjusting column count based on conveyor speed.
 3. Synchronizing image acquisition with encoder signals.
 
-Features
+Features  
 A. ZED Camera Control  
 Initialize and configure the ZED camera.  
 Collect and process images in real-time.  
