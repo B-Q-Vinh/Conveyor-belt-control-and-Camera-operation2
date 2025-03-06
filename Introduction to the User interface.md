@@ -2,7 +2,7 @@ Conveyor Control Panel
 C# Windows Forms application for controlling and monitoring industrial conveyor systems with integrated camera functionality for quality control.  
 ![image](https://github.com/user-attachments/assets/7aa00576-99f3-426b-9d24-7650c5619b6c)
 
-Features
+Features  
 A. Motor Control & Monitoring (communicate with Arduino)
 1. Directional Control: Forward, backward, and stop functionality for conveyor motor  
 2. Speed Control: Precise frequency adjustment (0.00 - 50.00 Hz) via slider or direct input  
@@ -93,7 +93,7 @@ private float CalculateSpeed(ushort currentPosition)
 3. Encoder Specifications:
 Resolution: 14-bit (16384 PPR), Update interval: 10ms, Communication: 2Mbps.  
 Product link: https://www.sameskydevices.com/product/motion-and-control/rotary-encoders/absolute/modular/amt212b-v  
-Manual user for (C++): https://github.com/same-sky/AMT21_RS485_Sample_Code_Mega  
+Manual user (for C++): https://github.com/same-sky/AMT21_RS485_Sample_Code_Mega  
 Example (for C#):
 ```
 private void UpdatePositionContinuously()
@@ -215,7 +215,7 @@ private void WaitMicroseconds(int microseconds)
 }
 ```  
 
-5. Camera System:
+5. Camera System:  
 Install required NuGet packages: ZED Camera integration with OpenCVSharp and Plotly.  
 ![image](https://github.com/user-attachments/assets/fcdcfb4e-6433-4893-aedf-b2a452f27c6c)
 ![image](https://github.com/user-attachments/assets/2a3ef6f1-0e41-43f9-b532-f7bcc853838b)
