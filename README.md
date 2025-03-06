@@ -19,10 +19,10 @@ Technologies Used:
 4. Communication Protocol: RS-485 (Modbus).
 
 Introduce about the codes:
-1. 
-2. 
-3. 
-4. 
+1. https://github.com/B-Q-Vinh/Conveyor-belt-control-and-Convert-Area-Scan-To-Line-Scan-Of-Camera/blob/master/Introduction%20to%20the%20Arduino%20code.md
+2. https://github.com/B-Q-Vinh/Conveyor-belt-control-and-Convert-Area-Scan-To-Line-Scan-Of-Camera/blob/master/Introduction%20to%20the%20User%20interface.md
+3. https://github.com/B-Q-Vinh/Conveyor-belt-control-and-Convert-Area-Scan-To-Line-Scan-Of-Camera/blob/master/Introduce%20to%20Area%20scan%20function%20of%20camera.md
+4. https://github.com/B-Q-Vinh/Conveyor-belt-control-and-Convert-Area-Scan-To-Line-Scan-Of-Camera/blob/master/Introduce%20to%20Line%20scan%20function%20of%20camera.md
 
 Full codes:
 
