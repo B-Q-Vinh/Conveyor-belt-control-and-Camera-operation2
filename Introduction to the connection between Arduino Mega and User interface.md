@@ -4,17 +4,17 @@ A. VFD Control via RS-485
 RS-485 User’s manual (for Frenic mini): https://americas.fujielectric.com/files/RS-485_Users_Manual_24A7-E-0082.pdf  
 Arduino Mega acts as the master controller, sending control commands to VFD (Variable Frequency Drive) via RS-485 communication (using ModbusMaster library). The main commands include:
 
-1.Run Operation command: S06  
+1. Run Operation command: S06  
 Forward direction (FWD): S06 = 1.  
 Backward direction (REV): S06 = 2.  
 Stop: S06 = 0.  
 
-2.Frequency reference: S05
+2. Frequency reference: S05
 VFD receives the desired Frequency and will multiply by 0.01 Hz to get the frequency set for the Motor.
 
-Use two more commands for Monitoring to see output frequency and output voltage:
-1.Output frequency: M06 (multiply by 0.01)
-2.Output voltage: M12 (multiply by 0.1)
+Use two more commands for Monitoring to see output frequency and output voltage:  
+1. Output frequency: M06 (multiply by 0.01)
+2. Output voltage: M12 (multiply by 0.1)
 
 In Arduino programming, the commands above must be converted into Hexadecimal (HEX) so that both the Arduino and the VFD can understand it. The conversion process is as follows:
 
