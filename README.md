@@ -12,7 +12,7 @@ Key features of the project include:
 
 Technologies Used:
 
-Programming Languages: C#, C++, Arduino.
-Hardware: Arduino Mega, Absolute Encoder, Fuji Frenic Mini VFD, MAX-485 transceivers, ZED Camera (temporary replacement for Hyperspectral Camera), Halogen Lights.
-Software Tools: Visual Studio 2022, Arduino IDE.
-Communication Protocol: RS-485 (Modbus).
+1. Programming Languages: C#, C++, Arduino.
+2. Hardware: Arduino Mega, Absolute Encoder, Fuji Frenic Mini VFD, MAX-485 transceivers, ZED Camera (temporary replacement for Hyperspectral Camera), Halogen Lights.
+3. Software Tools: Visual Studio 2022, Arduino IDE.
+4. Communication Protocol: RS-485 (Modbus).
