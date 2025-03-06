@@ -29,7 +29,7 @@ For motor operation:
 
 For the M group, it is equivalent to 08:
 1. Output Frequency Address = M (08) + 09 = 0809 (hex).
-2. Output Voltage Address = M (08) + 12 = 080C (hex).
+2. Output Voltage Address = M (08) + 12 = 080C (hex).  
 Note: Be sure to double-check the conversion to HEX to avoid confusion, as C in HEX equals 12
 
 Example:
@@ -90,7 +90,7 @@ void postTransmission() {
 ```
 
 B. Send Data To User Interface (UI)  
-Arduino periodically sends a series of data to the computer so that the UI will separate each element to update the display parameters:
+Arduino periodically sends a series of data to the computer so that the UI will separate each element to update the display parameters:  
 
 Example: F: 15.00, V: 220.0, T: 32.5, V: 300, F: Run
 
