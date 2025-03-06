@@ -18,6 +18,12 @@ Technologies Used:
 3. Software Tools: Visual Studio 2022 (.Net framework), Arduino IDE.
 4. Communication Protocol: RS-485 (Modbus).
 
+Introduce about the codes:
+1. 
+2. 
+3. 
+4. 
+
 Full codes:
 
 1. C++ (Arduino): https://github.com/B-Q-Vinh/Conveyor-belt-control-and-Convert-Area-Scan-To-Line-Scan-Of-Camera/blob/master/Conveyor_Control_Arduino.ino
