@@ -1,13 +1,13 @@
 The introduction to the main functionality of the Arduino code, focusing on the Command part for the VFD and Interfacing with the User Interface (UI) , also briefly mentioning other functions.
 
-A. VFD Control via RS-485
+A. VFD Control via RS-485  
 RS-485 User’s manual (for Frenic mini): https://americas.fujielectric.com/files/RS-485_Users_Manual_24A7-E-0082.pdf
 Arduino Mega acts as the master controller, sending control commands to VFD (Variable Frequency Drive) via RS-485 communication (using ModbusMaster library). The main commands include:
 
-1.Run Operation command: S06
-Forward direction (FWD): S06 = 1.
-Backward direction (REV): S06 = 2.
-Stop: S06 = 0.
+1.Run Operation command: S06  
+Forward direction (FWD): S06 = 1.  
+Backward direction (REV): S06 = 2.  
+Stop: S06 = 0.  
 
 2.Frequency reference: S05
 VFD receives the desired Frequency and will multiply by 0.01 Hz to get the frequency set for the Motor.
@@ -89,7 +89,7 @@ void postTransmission() {
 }
 ```
 
-B. Send Data To User Interface (UI)
+B. Send Data To User Interface (UI)  
 Arduino periodically sends a series of data to the computer so that the UI will separate each element to update the display parameters:
 
 Example: F: 15.00, V: 220.0, T: 32.5, V: 300, F: Run
@@ -109,6 +109,6 @@ C. Process Overview
 5. Arduino reads more from sensor (Temperature, Vibration).
 6. Arduino sends all data to UI via Serial to update the interface.
 
-D. Other functions
+D. Other functions  
 Such as reading sensors, especially the DS18B20 temperature sensor, which requires two libraries: OneWire.h and DallasTemperature.h to read the temperature.
 Once the temperature is measured, a PID feedback control is used to control the L298N motor driver (connected to a fan) via PWM.
