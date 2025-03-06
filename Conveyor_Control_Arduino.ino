@@ -370,9 +370,9 @@ float calculateSpeed(unsigned long currentPosition, unsigned long previousPositi
   long deltaPosition = abs(currentPosition - previousPosition); // Calculate the absolute position change
 
   // Treatment of overflowing when the encoder turns all around
-  if (deltaPosition < -(PPR / 2)) { // Chuyển từ giá trị cao nhất về thấp nhất
+  if (deltaPosition < -(PPR / 2)) { // Move from highest value to lowest
     deltaPosition += PPR;
-  } else if (deltaPosition > (PPR / 2)) { // Chuyển từ giá trị thấp nhất về cao nhất
+  } else if (deltaPosition > (PPR / 2)) { // Switch from lowest value to highest level
     deltaPosition -= PPR;
   }
 
