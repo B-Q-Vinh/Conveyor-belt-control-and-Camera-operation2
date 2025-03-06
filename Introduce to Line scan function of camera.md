@@ -35,12 +35,12 @@ E. How It Works
 5. When the maximum number of columns is reached (calculated based on speed), the image is refreshed
 6. Image is continuously displayed in an OpenCV window
 Example:
-When the 2D image is being composited by line scan images
+When the 2D image is being composited by line scan images  
 ![image](https://github.com/user-attachments/assets/80e9c4ae-cdbc-47cc-bdb9-5ab6f52253ec)
-After the image is completed
+After the image is completed  
 ![image](https://github.com/user-attachments/assets/0880bf9b-3590-4289-839c-7df8058866bb)
   
-F. Formula to calculate column of line scan images
+F. Formula to calculate column of line scan images  
 currentMaxColumns = baseColumns * (baseSpeed / currentSpeed) * (1 + K * (currentSpeed - baseSpeed))  
 Where:  
 1. baseColumns is the reference column count (1950)
