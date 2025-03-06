@@ -8,11 +8,18 @@ Key features of the project include:
 
 1. Developing software to control and monitor a conveyor belt using Arduino Mega, FRENIC-Mini Variable Frequency Drive (VFD) and AMT212B-V Absolute encoder .
 2. Creating a user interface (UI) using C# (.NET framework) to allow operators to control the system and view real-time data.
-3. Simulate line scan functionality based on area scan functionality.
+3. Simulate line scan functionality based on area scan functionality of the camera.
 
 Technologies Used:
 
 1. Programming Languages: C#, C++, Arduino.
-2. Hardware: Arduino Mega, Absolute Encoder, Fuji Frenic Mini VFD, MAX-485 transceivers, ZED Camera (temporary replacement for Hyperspectral Camera), Halogen Lights.
-3. Software Tools: Visual Studio 2022, Arduino IDE.
+2. Hardware: Arduino Mega, Absolute Encoder, Fuji Frenic Mini VFD, MAX-485 transceivers, L298N motor driver, S801 vibration sensor, DS18B20 temperature sensor, ZED Camera (temporary replacement for Hyperspectral Camera), Halogen Lights.
+3. Software Tools: Visual Studio 2022 (.Net framework), Arduino IDE.
 4. Communication Protocol: RS-485 (Modbus).
+
+Full codes:
+
+1. C++ (Arduino): https://github.com/B-Q-Vinh/Conveyor-belt-control-and-Convert-Area-Scan-To-Line-Scan-Of-Camera/blob/master/Conveyor_Control_Arduino.ino
+2. C# (User interface): https://github.com/B-Q-Vinh/Conveyor-belt-control-and-Convert-Area-Scan-To-Line-Scan-Of-Camera/blob/master/Conveyor_Control_Panel/Form1.cs
+3. C# (Area scan functionality): https://github.com/B-Q-Vinh/Conveyor-belt-control-and-Convert-Area-Scan-To-Line-Scan-Of-Camera/blob/master/Conveyor_Control_Panel/Form2.cs
+4. C# (Line scan functionality): https://github.com/B-Q-Vinh/Conveyor-belt-control-and-Convert-Area-Scan-To-Line-Scan-Of-Camera/blob/master/Conveyor_Control_Panel/Form3.cs
