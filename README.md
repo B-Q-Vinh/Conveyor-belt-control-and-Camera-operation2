@@ -23,3 +23,5 @@ Full codes:
 2. C# (User interface): https://github.com/B-Q-Vinh/Conveyor-belt-control-and-Convert-Area-Scan-To-Line-Scan-Of-Camera/blob/master/Conveyor_Control_Panel/Form1.cs
 3. C# (Area scan functionality): https://github.com/B-Q-Vinh/Conveyor-belt-control-and-Convert-Area-Scan-To-Line-Scan-Of-Camera/blob/master/Conveyor_Control_Panel/Form2.cs
 4. C# (Line scan functionality): https://github.com/B-Q-Vinh/Conveyor-belt-control-and-Convert-Area-Scan-To-Line-Scan-Of-Camera/blob/master/Conveyor_Control_Panel/Form3.cs
+
+Note: Since I'm still new to coding in C++ and C#, the code has not yet been optimized or made clear.
