@@ -33,6 +33,7 @@ For the M group, it is equivalent to 08:
 Note: Be sure to double-check the conversion to HEX to avoid confusion, as C in HEX equals 12
 
 Example:
+```
 // Define Modbus register addresses for VFD
 const int frequencyRegister = 0x0705;         // Register for setting VFD frequency
 const int operationCommandRegister = 0x0706;  // Register for starting/stopping VFD
@@ -86,6 +87,7 @@ void preTransmission() {
 void postTransmission() {
     digitalWrite(RS485_VFD_RE_DE, LOW);
 }
+```
 
 B. Send Data To User Interface (UI)
 Arduino periodically sends a series of data to the computer so that the UI will separate each element to update the display parameters:
