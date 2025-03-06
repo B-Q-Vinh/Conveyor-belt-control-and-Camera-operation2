@@ -41,50 +41,50 @@ const int outputVoltageRegister = 0x080C;     // Register for reading output vol
 
 // VFD control with commands
 void processSerialCommand(String input) {
-  if (input == String("Stop")) {
-    node.writeSingleRegister(operationCommandRegister, 0x0000); // Stop
-    //Serial.println("VFD Stopped.");
-  } else if (input == String("Forward")) {
-    node.writeSingleRegister(operationCommandRegister, 0x0001); // Forward
-    //Serial.println("VFD Forward.");
-  } else if (input == String("Backward")) {
-    node.writeSingleRegister(operationCommandRegister, 0x0002); // Reverse
-    //Serial.println("VFD Reverse.");
-  } else {
-    float frequency = input.toFloat(); // Frequency setting
-    if (frequency >= 0.00 && frequency <= 50.00) {
-      int frequencyValue = frequency * 100;
-      node.writeSingleRegister(frequencyRegister, frequencyValue);
-      //Serial.print("Frequency Set to: ");
-      //Serial.print(frequency);
-      //Serial.println(" Hz");
+    if (input == String("Stop")) {
+        node.writeSingleRegister(operationCommandRegister, 0x0000); // Stop
+        // Serial.println("VFD Stopped.");
+    } else if (input == String("Forward")) {
+        node.writeSingleRegister(operationCommandRegister, 0x0001); // Forward
+        // Serial.println("VFD Forward.");
+    } else if (input == String("Backward")) {
+        node.writeSingleRegister(operationCommandRegister, 0x0002); // Reverse
+        // Serial.println("VFD Reverse.");
     } else {
-      //Serial.println("Invalid input. Enter Stop, Forward, Backward, or frequency (0.00 to 50.00).");
+        float frequency = input.toFloat(); // Frequency setting
+        if (frequency >= 0.00 && frequency <= 50.00) {
+            int frequencyValue = frequency * 100;
+            node.writeSingleRegister(frequencyRegister, frequencyValue);
+            // Serial.print("Frequency Set to: ");
+            // Serial.print(frequency);
+            // Serial.println(" Hz");
+        } else {
+            // Serial.println("Invalid input. Enter Stop, Forward, Backward, or frequency (0.00 to 50.00).");
+        }
     }
-  }
 }
 
 // Read VFD frequency and voltage
 void readVFDStatus() {
-  uint8_t result = node.readHoldingRegisters(outputFrequencyRegister, 1);
-  if (result == node.ku8MBSuccess) {
-    outputFrequency = node.getResponseBuffer(0) * 0.01;
-  }
+    uint8_t result = node.readHoldingRegisters(outputFrequencyRegister, 1);
+    if (result == node.ku8MBSuccess) {
+        outputFrequency = node.getResponseBuffer(0) * 0.01;
+    }
 
-  result = node.readHoldingRegisters(outputVoltageRegister, 1);
-  if (result == node.ku8MBSuccess) {
-    outputVoltage = node.getResponseBuffer(0) * 0.1;
-  }
+    result = node.readHoldingRegisters(outputVoltageRegister, 1);
+    if (result == node.ku8MBSuccess) {
+        outputVoltage = node.getResponseBuffer(0) * 0.1;
+    }
 }
 
 // RS-485 transmission control functions
 void preTransmission() {
-  digitalWrite(RS485_VFD_RE_DE, HIGH);
+    digitalWrite(RS485_VFD_RE_DE, HIGH);
 }
 
 // RS-485 receive control functions
 void postTransmission() {
-  digitalWrite(RS485_VFD_RE_DE, LOW);
+    digitalWrite(RS485_VFD_RE_DE, LOW);
 }
 
 B. Send Data To User Interface (UI)
