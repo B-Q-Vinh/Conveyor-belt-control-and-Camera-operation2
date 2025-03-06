@@ -31,9 +31,9 @@ E. Safety Features
 
 F. Other Specifications
 
-1. Mechanical formula and Formula using Encoder:
-Roller diameter: 5.9 cm, Motor poles: 2, Gear ratio: 30.  
-Speed calculation: π × D × (120×f/P) / (G × 60)
+1. Mechanical formula and Formula using Encoder:  
+Roller diameter: 5.9 cm, Motor poles: 2, Gear ratio: 30.    
+Speed calculation: π × D × (120×f/P) / (G × 60)  
 Arduino Mega will update Frequency to UI, then use that frequency to calculate speed.
 
 Another way to calculate speed is to rely on the Encoder to give the actual speed:
@@ -88,12 +88,12 @@ private float CalculateSpeed(ushort currentPosition)
 
     return speedSamples.Count > 0 ? speedSamples.Average() : 0;
 }
-```
+```  
 
 3. Encoder Specifications:
-Resolution: 14-bit (16384 PPR), Update interval: 10ms, Communication: 2Mbps
-Product link: https://www.sameskydevices.com/product/motion-and-control/rotary-encoders/absolute/modular/amt212b-v
-Manual user for (C++): https://github.com/same-sky/AMT21_RS485_Sample_Code_Mega
+Resolution: 14-bit (16384 PPR), Update interval: 10ms, Communication: 2Mbps.  
+Product link: https://www.sameskydevices.com/product/motion-and-control/rotary-encoders/absolute/modular/amt212b-v  
+Manual user for (C++): https://github.com/same-sky/AMT21_RS485_Sample_Code_Mega  
 Example (for C#):
 ```
 private void UpdatePositionContinuously()
@@ -213,10 +213,10 @@ private void WaitMicroseconds(int microseconds)
         Thread.Sleep(1); // Allow CPUs to handle other tasks without stopping
     }
 }
-```
+```  
 
 5. Camera System:
-Install required NuGet packages: ZED Camera integration with OpenCVSharp and Plotly.
+Install required NuGet packages: ZED Camera integration with OpenCVSharp and Plotly.  
 ![image](https://github.com/user-attachments/assets/fcdcfb4e-6433-4893-aedf-b2a452f27c6c)
 ![image](https://github.com/user-attachments/assets/2a3ef6f1-0e41-43f9-b532-f7bcc853838b)
 ![image](https://github.com/user-attachments/assets/aac17710-4a6e-4a3e-b1f3-62db7e4c8ec1)
